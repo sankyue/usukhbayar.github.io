@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            line-height: 1.34;
+        }
+        
+        .header {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 22px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .nav {
+            background-color: #3b5998;
+            padding: 5px 20px;
+            border-top: 1px solid #29487d;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 13px;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        
+        .sidebar {
+            width: 30%;
+            padding-right: 20px;
+        }
+        
+        .profile-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        
+        .profile-image {
+            height: 200px;
+            background-color: #e9ebee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8a8d91;
+            font-size: 14px;
+            border-bottom: 1px solid #dddfe2;
+        }
+        
+        .profile-info {
+            padding: 15px;
+        }
+        
+        .profile-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .profile-detail {
+            font-size: 13px;
+            color: #65676b;
+            margin-bottom: 3px;
+        }
+        
+        .quick-links {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 15px;
+        }
+        
+        .quick-links div {
+            padding: 8px 0;
+            font-size: 14px;
+            border-bottom: 1px solid #e4e6ea;
+        }
+        
+        .quick-links div:last-child {
+            border-bottom: none;
+        }
+        
+        .main {
+            width: 70%;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        .section-header {
+            background-color: #f5f6f7;
+            padding: 10px 15px;
+            font-weight: bold;
+            font-size: 16px;
+            border-bottom: 1px solid #dddfe2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .edit-link {
+            color: #385898;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: normal;
+        }
+        
+        .section-content {
+            padding: 15px;
+        }
+        
+        .info-row {
+            display: flex;
+            padding: 8px 0;
+            border-bottom: 1px solid #e4e6ea;
+        }
+        
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        
+        .info-label {
+            width: 40%;
+            font-weight: bold;
+            font-size: 14px;
+            color: #65676b;
+        }
+        
+        .info-value {
+            width: 60%;
+            font-size: 14px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #8a8d91;
+            font-size: 12px;
+            border-top: 1px solid #dddfe2;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">thefacebook</div>
+    
+    <div class="nav">
+        <a href="#">Search</a>
+        <a href="#">Quick search</a>
+        <a href="#">Active</a>
+        <a href="#">Edit</a>
+        <a href="#">Information</a>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="mclovin.jpg" alt="">
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name">South Swarm</div>
+                    <div class="profile-detail">Member since: October 1, 2005</div>
+                    <div class="profile-detail">Last update: October 2, 2005</div>
+                    <div class="profile-detail">e-mail: 21b1num2080@study.num.edu.mn</div>
+                </div>
+            </div>
+            
+            <div class="quick-links">
+                <div>My Account</div>
+                <div>My Privacy</div>
+                <div>My Friends</div>
+                <div>My Groups</div>
+                <div>My Photos</div>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="section">
+                <div class="section-header">
+                    Account Information
+                    <a href="#" class="edit-link">edit</a>
+                </div>
+                <div class="section-content">
+                    <div class="info-row">
+                        <div class="info-label">Name:</div>
+                        <div class="info-value">Usukhbayar Munkhbat</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Year:</div>
+                        <div class="info-value">2003</div>
+                    </div>
+                   
+                    <div class="info-row">
+                        <div class="info-label">University:</div>
+                        <div class="info-value">National University of Mongolia</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-header">
+                    Basic Information
+                    <a href="#" class="edit-link">edit</a>
+                </div>
+                <div class="section-content">
+                    <div class="info-row">
+                        <div class="info-label">Hometown:</div>
+                        <div class="info-value">Ulaanbaatar</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Looking For:</div>
+                        <div class="info-value">Bachelor's degree</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Relationship Status:</div>
+                        <div class="info-value">Complicated</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Interested In:</div>
+                        <div class="info-value">Whatever I can get.</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Political Views:</div>
+                        <div class="info-value">Literal</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-header">
+                    Privacy Preferences
+                    <a href="#" class="edit-link">edit</a>
+                </div>
+                <div class="section-content">
+
+                    <div class="info-row">
+                        <div class="info-label">Location:</div>
+                        <div class="info-value">Ulaanbaatar, Mongolia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; 2025 thefacebook
+    </div>
+</body>
+</html>
