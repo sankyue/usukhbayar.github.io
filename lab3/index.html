@@ -1,283 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Profile</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        
-        body {
-            background-color: #f0f2f5;
-            color: #1c1e21;
-            line-height: 1.34;
-        }
-        
-        .header {
-            background-color: #3b5998;
-            color: white;
-            padding: 10px 20px;
-            font-weight: bold;
-            font-size: 22px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        
-        .nav {
-            background-color: #3b5998;
-            padding: 5px 20px;
-            border-top: 1px solid #29487d;
-        }
-        
-        .nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 15px;
-            font-size: 13px;
-        }
-        
-        .nav a:hover {
-            text-decoration: underline;
-        }
-        
-        .container {
-            display: flex;
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 0 15px;
-        }
-        
-        .sidebar {
-            width: 30%;
-            padding-right: 20px;
-        }
-        
-        .profile-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            overflow: hidden;
-            margin-bottom: 15px;
-        }
-        
-        .profile-image {
-            height: 200px;
-            background-color: #e9ebee;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #8a8d91;
-            font-size: 14px;
-            border-bottom: 1px solid #dddfe2;
-        }
-        
-        .profile-info {
-            padding: 15px;
-        }
-        
-        .profile-name {
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-        
-        .profile-detail {
-            font-size: 13px;
-            color: #65676b;
-            margin-bottom: 3px;
-        }
-        
-        .quick-links {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            padding: 15px;
-        }
-        
-        .quick-links div {
-            padding: 8px 0;
-            font-size: 14px;
-            border-bottom: 1px solid #e4e6ea;
-        }
-        
-        .quick-links div:last-child {
-            border-bottom: none;
-        }
-        
-        .main {
-            width: 70%;
-        }
-        
-        .section {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            margin-bottom: 15px;
-            overflow: hidden;
-        }
-        
-        .section-header {
-            background-color: #f5f6f7;
-            padding: 10px 15px;
-            font-weight: bold;
-            font-size: 16px;
-            border-bottom: 1px solid #dddfe2;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .edit-link {
-            color: #385898;
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: normal;
-        }
-        
-        .section-content {
-            padding: 15px;
-        }
-        
-        .info-row {
-            display: flex;
-            padding: 8px 0;
-            border-bottom: 1px solid #e4e6ea;
-        }
-        
-        .info-row:last-child {
-            border-bottom: none;
-        }
-        
-        .info-label {
-            width: 40%;
-            font-weight: bold;
-            font-size: 14px;
-            color: #65676b;
-        }
-        
-        .info-value {
-            width: 60%;
-            font-size: 14px;
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 20px;
-            color: #8a8d91;
-            font-size: 12px;
-            border-top: 1px solid #dddfe2;
-            margin-top: 20px;
-        }
-    </style>
+<title>thefacebook</title>
+<style>
+    body {
+        font-family: "Tahoma", "Verdana", "Arial", sans-serif;
+        font-size: 11px;
+        background-color: #FFF;
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        color: #3B5998;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    #header {
+        background-color: #3B5998;
+        color: white;
+        padding: 4px 10px;
+        height: 45px;
+    }
+    #header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        font-weight: bold;
+        float: left;
+    }
+    #header .nav {
+        float: right;
+        margin-top: 10px;
+    }
+    #header .nav a {
+        color: white;
+        font-size: 11px;
+        margin-left: 15px;
+        font-weight: bold;
+    }
+    #subheader {
+        background-color: #D8DFEA;
+        padding: 4px 10px;
+        border-bottom: 1px solid #3B5998;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    #content {
+        width: 780px;
+        margin: 15px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #left-col {
+        width: 140px;
+    }
+    #right-col {
+        width: 620px;
+    }
+    .profile-title {
+        font-size: 14px;
+        font-weight: bold;
+        color: #3B5998;
+        margin: 0 0 10px 0;
+    }
+    .box {
+        background-color: #F7F7F7;
+        border: 1px solid #CCCCCC;
+        margin-bottom: 10px;
+    }
+    .box-title {
+        background-color: #D8DFEA;
+        border-bottom: 1px solid #CCCCCC;
+        padding: 3px 5px;
+        font-weight: bold;
+    }
+    .box-content {
+        padding: 5px;
+    }
+    .box-content a {
+        display: block;
+        margin-bottom: 3px;
+    }
+    #quicksearch input[type="text"] {
+        width: 90%;
+        margin-bottom: 3px;
+    }
+    #quicksearch input[type="submit"] {
+        background-color: #3B5998;
+        color: white;
+        border: 1px solid #3B5998;
+        font-size: 10px;
+    }
+    .main-profile-content {
+        display: flex;
+    }
+    .profile-picture-section {
+        width: 210px;
+        margin-right: 15px;
+    }
+    .profile-picture-section img {
+        width: 200px;
+        border: 1px solid black;
+        padding: 4px;
+    }
+    .profile-info-section {
+        width: 100%;
+    }
+    .info-box {
+        background-color: #F7F7F7;
+        border: 1px solid #ccc;
+    }
+    .info-header {
+        background-color: #D8DFEA;
+        padding: 3px 5px;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+    }
+    .info-header .edit-link {
+        float: right;
+        font-weight: normal;
+    }
+    .info-table {
+        width: 100%;
+        padding: 5px;
+    }
+    .info-table th {
+        text-align: right;
+        font-weight: normal;
+        color: #777;
+        vertical-align: top;
+        padding: 2px 5px 2px 0;
+        width: 100px;
+    }
+    .info-table td {
+        vertical-align: top;
+        padding: 2px 0;
+    }
+</style>
 </head>
 <body>
-    <div class="header">thefacebook</div>
-    
-    <div class="nav">
-        <a href="#">Search</a>
-        <a href="#">Quick search</a>
-        <a href="#">Active</a>
-        <a href="#">Edit</a>
-        <a href="#">Information</a>
-    </div>
-    
-    <div class="container">
-        <div class="sidebar">
-            <div class="profile-card">
-                <div class="profile-image">
-                    <img src="mclovin.jpg" alt="">
-                </div>
-                <div class="profile-info">
-                    <div class="profile-name">Usukhbayar Munkhbat</div>
-                    <div class="profile-detail">Member since: October 1, 2005</div>
-                    <div class="profile-detail">Last update: October 2, 2005</div>
-                    <div class="profile-detail">e-mail: 21b1num2080@study.num.edu.mn</div>
-                </div>
-            </div>
-            
-            <div class="quick-links">
-                <div>My Account</div>
-                <div>My Privacy</div>
-                <div>My Friends</div>
-                <div>My Groups</div>
-                <div>My Photos</div>
-            </div>
-        </div>
-        
-        <div class="main">
-            <div class="section">
-                <div class="section-header">
-                    Account Information
-                    <a href="#" class="edit-link">edit</a>
-                </div>
-                <div class="section-content">
-                    <div class="info-row">
-                        <div class="info-label">Name:</div>
-                        <div class="info-value">Usukhbayar Munkhbat</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Year:</div>
-                        <div class="info-value">2003</div>
-                    </div>
-                   
-                    <div class="info-row">
-                        <div class="info-label">University:</div>
-                        <div class="info-value">National University of Mongolia</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <div class="section-header">
-                    Basic Information
-                    <a href="#" class="edit-link">edit</a>
-                </div>
-                <div class="section-content">
-                    <div class="info-row">
-                        <div class="info-label">Hometown:</div>
-                        <div class="info-value">Ulaanbaatar</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Looking For:</div>
-                        <div class="info-value">Bachelor's degree</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Relationship Status:</div>
-                        <div class="info-value">Complicated</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Interested In:</div>
-                        <div class="info-value">Whatever I can get.</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Political Views:</div>
-                        <div class="info-value">Literal</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <div class="section-header">
-                    Privacy Preferences
-                    <a href="#" class="edit-link">edit</a>
-                </div>
-                <div class="section-content">
 
-                    <div class="info-row">
-                        <div class="info-label">Location:</div>
-                        <div class="info-value">Ulaanbaatar, Mongolia</div>
+<div id="header">
+    <h1>[thefacebook]</h1>
+    <div class="nav">
+        <a href="#">home</a>
+        <a href="#">search</a>
+        <a href="#">global</a>
+        <a href="#">social net</a>
+        <a href="#">invite</a>
+        <a href="#">faq</a>
+        <a href="#">logout</a>
+    </div>
+</div>
+
+<div id="subheader">
+    <span style="float: right;">McLovin</span>
+    <span>McLovin's Profile (This is you)</span>
+</div>
+
+<div id="content">
+    <div id="left-col">
+        <div id="quicksearch" class="box-content" style="border: 1px solid #ccc; margin-bottom: 10px;">
+            <form>
+                <input type="text" placeholder="quick search">
+                <input type="submit" value="go">
+            </form>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <a href="#">My Profile [ edit ]</a>
+                <a href="#">My Groups</a>
+                <a href="#">My Friends</a>
+                <a href="#">My Messages</a>
+                <a href="#">My Away Message</a>
+                <a href="#">My Mobile Info</a>
+                <a href="#">My Account</a>
+                <a href="#">My Privacy</a>
+            </div>
+        </div>
+    </div>
+    <div id="right-col">
+        <div class="main-profile-content">
+            <div class="profile-picture-section">
+                <div class="box">
+                    <div class="box-title">Picture <span style="float:right; font-weight:normal;">[ <a href="#">edit</a> ]</span></div>
+                    <div class="box-content">
+                        <img src="mclovin.jpg" alt="Profile Picture">
                     </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <a href="#">Visualize My Friends</a>
+                        <a href="#">Edit My Profile</a>
+                        <a href="#">My Account Preferences</a>
+                        <a href="#">My Privacy Preferences</a>
+                    </div>
+                </div>
+               
+                <div class="box">
+                    <div class="box-title">Connection</div>
+                    <div class="box-content">This is you.</div>
+                </div>
+                <div class="box">
+                    <div class="box-title">Access</div>
+                    <div class="box-content">McLovin is currently logged in from a non-residential location.</div>
+                </div>
+            </div>
+            <div class="profile-info-section">
+                <div class="info-box">
+                    <div class="info-header">Information <span class="edit-link">[ <a href="#">edit</a> ]</span></div>
+                    <div class="info-header" style="background-color: #FFF; border: none; padding-left: 10px;"><b>Account Info:</b></div>
+                    <table class="info-table">
+                        <tr><th>Name:</th><td>McLovin, BS</td></tr>
+                        <tr><th>Member Since:</th><td>January 12, 2005</td></tr>
+                        <tr><th>Last Update:</th><td>February 3, 2005</td></tr>
+                    </table>
+                    <div class="info-header" style="background-color: #FFF; border: none; padding-left: 10px;"><b>Basic Info:</b> <span class="edit-link">[ <a href="#">edit</a> ]</span></div>
+                    <table class="info-table">
+                        <tr><th>Email:</th><td>McLovin@scranton.edu</td></tr>
+                        <tr><th>Status:</th><td>Alumnus/Alumna</td></tr>
+                        <tr><th>Sex:</th><td>Male</td></tr>
+                        <tr><th>Year:</th><td>2004</td></tr>
+                        <tr><th>Concentration:</th><td>Computing Sciences<br>Mathematics</td></tr>
+                        <tr><th>Phone:</th><td>570.499.4818</td></tr>
+                        <tr><th>High School:</th><td>Dunmore HS '00</td></tr>
+                    </table>
+                    <div class="info-header" style="background-color: #FFF; border: none; padding-left: 10px;"><b>Extended Info:</b> <span class="edit-link">[ <a href="#">edit</a> ]</span></div>
+                     <table class="info-table">
+                        <tr><th>Screenname:</th><td>McLovin</td></tr>
+                        <tr><th>Looking For:</th><td>Friendship<br>Dating<br>A Relationship<br>Random play<br>Whatever I can get</td></tr>
+                        <tr><th>Interested In:</th><td>Women</td></tr>
+                        <tr><th>Relationship Status:</th><td>Single</td></tr>
+                        <tr><th>Political Views:</th><td>Liberal</td></tr>
+                        <tr><th>Interests:</th><td>Drinking, Football, Basketball, Tennis, saying you'll have that</td></tr>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
-    
-    <div class="footer">
-        &copy; 2025 thefacebook
-    </div>
+</div>
+
 </body>
 </html>
