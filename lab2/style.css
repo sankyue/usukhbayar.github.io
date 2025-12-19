@@ -1,0 +1,60 @@
+/* Ерөнхий */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background: #0f172a;
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #f1f5f9;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #334155;
+}
+
+/* Текстийн хэсэг */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+/* Гарчиг */
+h1, h2 {
+  color: #38bdf8;
+  text-align: center;
+}
+
+/* Холбоо барих */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #334155;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
