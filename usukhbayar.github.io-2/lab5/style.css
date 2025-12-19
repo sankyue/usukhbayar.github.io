@@ -1,0 +1,175 @@
+/* Global layout */
+body {
+    padding: 0; /* pages in this theme align to the top bar */
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 400;
+    color: #333;
+    background: #fff;
+}
+
+/* Define main color tokens from the style guide for consistency */
+:root {
+    --navy-1: #13124F; /* topbar */
+    --navy-2: #1B1B6C;
+    --purple-1: #352BA5;
+    --pink: #F61067;
+    --green: #2AD392;
+    --muted: #9090A5;
+}
+
+/* Top bar / brand */
+.topbar {
+    background: var(--navy-1); /* deep navy */
+    height: 48px;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
+}
+.topbar .brand {
+    color: #fff;
+    padding: 12px 20px;
+    font-weight: 700;
+}
+
+/* Jumbotron (hero) */
+.jumbotron {
+    background: linear-gradient(180deg, #21145b 0%, #151033 100%);
+    color: #fff;
+    padding: 60px 40px;
+    margin-bottom: 40px;
+}
+.jumbotron h1 {
+    font-size: 56px;
+    font-weight: 300;
+    margin: 0 0 8px 0;
+    line-height: 1.05;
+}
+.jumbotron .lead {
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 18px;
+}
+
+/* Primary CTA: pink button */
+.btn-primary {
+    background: var(--pink); /* bright pink */
+    border-color: #e60058;
+    color: #fff;
+    padding: 10px 18px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background: #d6085f;
+    color: #fff;
+}
+
+.btn-lg { padding: 12px 20px; font-size: 16px; }
+
+/* Message bar (top of sidebar) */
+.message-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent; /* content determines color */
+    padding: 0; /* we'll style the inner badge */
+    margin-bottom: 20px;
+}
+.messages-badge {
+    display: inline-block;
+    background: var(--pink);
+    color: #fff;
+    padding: 10px 14px;
+    font-weight: 700;
+    border-radius: 2px;
+}
+.messages-badge .badge {
+    background: #3ea6ff;
+    color: #fff;
+    margin-left: 8px;
+}
+
+/* Panels on right column */
+.panel-default {
+    border-color: #e6e6e9;
+}
+.panel-default .panel-heading {
+    background: var(--muted); /* muted lavender */
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 15px;
+}
+.panel-default .panel-body {
+    background: #23124f; /* deep purple interior */
+    color: #fff;
+    padding: 18px;
+}
+.panel-default .panel-body p {
+    color: rgba(255,255,255,0.9);
+}
+.panel-default .form-control {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.12);
+    color: #fff;
+}
+.panel-default .btn-primary {
+    margin-top: 10px;
+}
+
+/* Vote box - COOL (pink) / LAME (green outline) */
+.vote-section { margin: 18px 0; }
+.vote-section .btn-primary { background: var(--pink); border-color: #e60058; }
+.vote-section .btn-default {
+    background: #fff;
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+
+/* Alert bar under content */
+.alert-box {
+    background: #9a93a9; /* soft lavender */
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+.alert-box i { margin-right: 8px; }
+
+/* Misc: keep existing light defaults for .btn-default used elsewhere */
+.btn-default { background-color: #fff; border-color: #ddd; color: #333; }
+
+/* Horizontal rule spacing */
+hr { margin-top: 24px; margin-bottom: 24px; border: 0; border-top: 1px solid #eee; }
+
+/* Footer bar */
+footer {
+    background: #21145b;
+    color: rgba(255,255,255,0.85);
+    padding: 12px 20px;
+    margin-top: 30px;
+}
+
+/* Responsiveness tweaks */
+/* Responsive breakpoints: tablet and mobile tweaks */
+@media (max-width: 991px) {
+    .jumbotron { padding: 40px 20px; }
+    .jumbotron h1 { font-size: 42px; }
+    .panel-default .panel-body { padding: 14px; }
+    .message-box { justify-content: flex-start; }
+    .messages-badge { display: inline-block; }
+}
+
+@media (max-width: 767px) {
+    .jumbotron { padding: 30px 16px; }
+    .jumbotron h1 { font-size: 36px; }
+    .messages-badge { display: block; width: 100%; text-align: center; }
+    .message-box { margin-bottom: 16px; }
+    .panel-default .panel-body { padding: 12px; }
+    .vote-section .btn { width: 48%; display: inline-block; margin-right: 2%; }
+    .vote-section .btn:last-child { margin-right: 0; }
+}
+
+@media (max-width: 480px) {
+    .jumbotron h1 { font-size: 28px; }
+    .jumbotron .lead { font-size: 14px; }
+    .messages-badge { font-size: 13px; padding: 8px; }
+    .message-box span.glyphicon { display: none; }
+    .vote-section .btn { width: 100%; margin-bottom: 8px; }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TheFacebook - Lab work</title>
+</head>
+<!-- Лекцийн дагуу body дээр margin-г 0 болгож, үндсэн фонтыг зааж өгч болно -->
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#ffffff">
+
+<!-- 1. ҮНДСЭН БҮТЭЦ (Main Container) -->
+<!-- Вэб сайтыг голлуулахын тулд align="center" ашиглав -->
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+    
+    <!-- 2. ТОЛГОЙ ХЭСЭГ (Header) -->
+    <tr>
+        <!-- Цэнхэр дэвсгэр өнгө -->
+        <td bgcolor="#3B5998" height="80">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="20">&nbsp;</td> <!-- Зүүн талын зай -->
+                    <td valign="bottom">
+                        <!-- Лого хэсэг -->
+                        <font face="tahoma, verdana, arial" size="6" color="#FFFFFF"><b>[ thefacebook ]</b></font>
+                    </td>
+                    <td valign="bottom" align="right">
+                        <!-- Цэсний линкүүд -->
+                        <font face="tahoma, verdana, arial" size="2">
+                            <a href="#"><font color="#FFFFFF">home</font></a> &nbsp;
+                            <a href="#"><font color="#FFFFFF">search</font></a> &nbsp;
+                            <a href="#"><font color="#FFFFFF">global</font></a> &nbsp;
+                            <a href="#"><font color="#FFFFFF">social net</font></a> &nbsp;
+                            <a href="#"><font color="#FFFFFF">invite</font></a> &nbsp;
+                            <a href="#"><font color="#FFFFFF">faq</font></a> &nbsp;
+                            <a href="#"><font color="#FFFFFF">logout</font></a>
+                        </font>
+                        <br>&nbsp;
+                    </td>
+                    <td width="20">&nbsp;</td> <!-- Баруун талын зай -->
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- 3. БИЕ ХЭСЭГ (Body) -->
+    <tr>
+        <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="10">
+                <tr>
+                    <!-- ЗҮҮН ТАЛЫН БАГАНА (Sidebar) -->
+                    <td width="150" valign="top" bgcolor="#FFFFFF">
+                        
+                        <!-- Хайлтын хэсэг (Table ашиглаж хүрээ хийв) -->
+                        <table width="100%" border="1" bordercolor="#3B5998" cellspacing="0" cellpadding="5">
+                            <tr>
+                                <td bgcolor="#f7f7f7">
+                                    <font face="tahoma, arial" size="1">
+                                    quick search<br>
+                                    <input type="text" size="10" name="search">
+                                    <input type="submit" value="go">
+                                    </font>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+
+                        <!-- Цэснүүд -->
+                        <font face="tahoma, arial" size="2" color="#3B5998">
+                            <a href="#"><font color="#3B5998">My Profile</font></a> [ <a href="#"><font color="#3B5998">edit</font></a> ]<br>
+                            <a href="#"><font color="#3B5998">My Groups</font></a><br>
+                            <a href="#"><font color="#3B5998">My Friends</font></a><br>
+                            <a href="#"><font color="#3B5998">My Messages</font></a><br>
+                            <a href="#"><font color="#3B5998">My Account</font></a><br>
+                            <a href="#"><font color="#3B5998">My Privacy</font></a>
+                        </font>
+                    </td>
+
+                    <!-- БАРУУН ТАЛЫН БАГАНА (Main Content) -->
+                    <td valign="top">
+                        
+                        <!-- Гарчиг -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                            <tr>
+                                <td bgcolor="#3B5998">
+                                    <font face="tahoma, arial" size="2" color="#FFFFFF"><b>&nbsp; Scott Pearson's Profile</b> (This is you)</font>
+                                </td>
+                                <td bgcolor="#3B5998" align="right">
+                                    <font face="tahoma, arial" size="2" color="#FFFFFF">Scranton &nbsp;</font>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+
+                        <!-- Мэдээллийг 2 баганад хуваах -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <!-- Зурагны хэсэг -->
+                                <td width="40%" valign="top">
+                                    <table width="95%" border="1" bordercolor="#3B5998" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td bgcolor="#3B5998">
+                                                <font face="tahoma, arial" size="2" color="#FFFFFF"><b>&nbsp; Picture</b></font>
+                                            </td>
+                                            <td bgcolor="#3B5998" align="right">
+                                                <font face="tahoma, arial" size="2" color="#FFFFFF">[ edit ] &nbsp;</font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" align="center" height="150">
+                                                <br>
+                                                <!-- Зураг байхгүй бол текст харагдана -->
+                                                <font face="tahoma" size="2">Profile Picture</font>
+                                                <br><br>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <!-- Мэдээллийн хэсэг -->
+                                <td width="60%" valign="top">
+                                    <table width="100%" border="1" bordercolor="#3B5998" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td bgcolor="#3B5998">
+                                                <font face="tahoma, arial" size="2" color="#FFFFFF"><b>&nbsp; Information</b></font>
+                                            </td>
+                                            <td bgcolor="#3B5998" align="right">
+                                                <font face="tahoma, arial" size="2" color="#FFFFFF">[ edit ] &nbsp;</font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <!-- Доторх мэдээллийн задаргаа -->
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="3">
+                                                    <tr>
+                                                        <td colspan="2"><font face="tahoma, arial" size="2"><b>Account Info:</b></font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="40%"><font face="tahoma, arial" size="2" color="gray">Name:</font></td>
+                                                        <td><font face="tahoma, arial" size="2">Scott Pearson</font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><font face="tahoma, arial" size="2" color="gray">Member Since:</font></td>
+                                                        <td><font face="tahoma, arial" size="2">Jan 12, 2005</font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"><hr size="1" color="#cccccc"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"><font face="tahoma, arial" size="2"><b>Basic Info:</b></font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><font face="tahoma, arial" size="2" color="gray">Email:</font></td>
+                                                        <td><font face="tahoma, arial" size="2">scott@example.com</font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><font face="tahoma, arial" size="2" color="gray">Status:</font></td>
+                                                        <td><font face="tahoma, arial" size="2">Student</font></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <!-- 4. FOOTER ХЭСЭГ -->
+    <tr>
+        <td align="center">
+            <br>
+            <font face="tahoma, arial" size="1" color="gray">
+                Mongolian University of Science and Technology &copy; 2024
+            </font>
+            <br><br>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

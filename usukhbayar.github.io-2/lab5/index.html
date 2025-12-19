@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webjunto Exercise - Даалгавар 1, 2, 3</title>
+    <style>
+        /* --- ДААЛГАВАР 2: Өнгө болон Фонт тохиргоо --- */
+        /* Styleguide зураг дээрх өнгөнүүдийг энд тохируулна. 
+           Та зургаа хараад HEX кодуудыг нь энд сольж бичээрэй. */
+        :root {
+            --primary-color: #2c3e50;    /* Үндсэн бараан өнгө (Header/Footer) */
+            --accent-color: #e74c3c;     /* Тод өнгө (Товчлуур гэх мэт) */
+            --text-color: #333333;       /* Үндсэн текст */
+            --bg-light: #f4f4f4;         /* Цайвар дэвсгэр */
+            --white: #ffffff;
+            --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        /* --- ҮНДСЭН ТОХИРГОО (Reset) --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* --- ДААЛГАВАР 1: Бүтэц гаргах --- */
+        
+        /* 1. HEADER / ТОЛГОЙ */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto; /* Голлуулах */
+            padding: 0 15px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* 2. HERO SECTION / ТОМ ЗУРАГТАЙ ХЭСЭГ */
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* 3. FEATURES / 3 БАГАНА ХЭСЭГ */
+        .features {
+            padding: 50px 0;
+            background-color: var(--white);
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .col {
+            flex: 1; /* Тэнцүү хуваах */
+            text-align: center;
+            padding: 20px;
+            background: var(--bg-light);
+            border-radius: 5px;
+        }
+
+        .col h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        /* 4. VIDEO SECTION / БИЧЛЭГ ОРУУЛАХ */
+        .video-section {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #eee;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 харьцаа */
+            height: 0;
+            overflow: hidden;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 5. FOOTER / ХӨЛ ХЭСЭГ */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+
+        /* --- ДААЛГАВАР 3: Responsive (@media query) --- */
+        
+        /* Таблет болон жижиг дэлгэц (768px-ээс бага) */
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column; /* Багануудыг босоо болгоно */
+            }
+            
+            .col {
+                margin-bottom: 20px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Гар утас (480px-ээс бага) */
+        @media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                margin-top: 15px;
+                flex-direction: column;
+                padding: 0;
+            }
+
+            .nav-links li {
+                margin: 5px 0;
+            }
+
+            .hero {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">WebJunto</div>
+                <ul class="nav-links">
+                    <li><a href="#">Нүүр</a></li>
+                    <li><a href="#">Бидний тухай</a></li>
+                    <li><a href="#">Холбоо барих</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Вэб дизайны даалгавар</h1>
+        <p>HTML, CSS болон Media Query ашиглан хийв.</p>
+        <a href="#" class="btn">Дэлгэрэнгүй</a>
+    </section>
+
+    <!-- 3 Column Features -->
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>HTML5 Бүтэц</h3>
+                    <p>Энэ хэсэгт HTML5-ын семантик тагуудыг ашиглан вэб сайтын үндсэн араг ясыг босгосон болно.</p>
+                </div>
+                <div class="col">

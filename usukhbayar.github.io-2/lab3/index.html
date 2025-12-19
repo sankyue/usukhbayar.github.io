@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TheFacebook - Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d9e4f2;
+      margin: 0;
+      padding: 10px;
+      font-size: 11px;
+    }
+
+    /*profile zurag*/
+    .profile-img {
+      width: 160px;   
+      height: 210px;    
+      border: 1px solid #999;
+      object-fit: cover;  
+      display: block;     
+    }
+
+    /*linkuud*/
+    a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    
+    .main-container {
+      width: 900px;
+      margin: 0 auto; 
+      background-color: #ffffff;
+      border: 1px solid #336699;
+      border-collapse: collapse;
+    }
+
+    /* Header */
+    .header-row {
+      background-color: #3b5998;
+      color: white;
+    }
+    .logo-cell {
+      font-size: 24px;
+      padding: 10px;
+      font-weight: bold;
+      text-align: left;
+    }
+    .nav-cell {
+      font-size: 12px;
+      padding-right: 15px;
+      padding-top: 10px;
+      text-align: right;
+    }
+
+    /* User Bar */
+    .user-bar {
+      background-color: #e9edf5;
+    }
+    .user-bar td {
+      padding: 8px;
+      color: #333;
+      font-weight: bold;
+      border-bottom: 1px solid #c9d1e0;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 150px;
+      background-color: #e9edf5;
+      padding: 10px;
+      border-right: 1px solid #c9d1e0;
+      vertical-align: top;
+    }
+    .search-header {
+      background-color: #cccccc;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      padding: 4px;
+      font-size: 11px;
+    }
+    .search-input {
+      width: 95%;
+      padding: 3px;
+      font-size: 11px;
+    }
+    .search-btn {
+      width: 95%;
+      padding: 3px;
+      margin-top: 3px;
+      font-size: 11px;
+    }
+    .menu-link {
+      font-size: 11px;
+      padding: 2px 0;
+    }
+
+    /* Main */
+    .content-area {
+      padding: 10px;
+      vertical-align: top;
+    }
+    
+    /* Infoboxuud */
+    .info-box {
+      width: 100%;
+      background-color: #f0f0f0;
+      border: 1px solid #999999;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+    .box-header {
+      background-color: #3b5998;
+      color: white;
+    }
+    .box-title {
+      font-weight: bold;
+      font-size: 12px;
+      padding: 5px;
+    }
+    .box-edit {
+      text-align: right;
+      font-size: 10px;
+      padding-right: 5px;
+    }
+    .box-edit a {
+      color: white;
+    }
+    .box-content {
+      padding: 10px;
+      font-size: 11px;
+    }
+
+    /* Information */
+    .data-label {
+      font-size: 11px;
+      font-weight: bold;
+      vertical-align: top;
+    }
+    .data-value {
+      font-size: 11px;
+      vertical-align: top;
+    }
+    .divider {
+      margin: 5px 0;
+      border: none;
+      border-top: 1px solid #999;
+    }
+  </style>
+</head>
+<body>
+
+  <table class="main-container" cellspacing="0" cellpadding="0">
+    <tr class="header-row">
+      <td class="logo-cell">[thefacebook]</td>
+      <td class="nav-cell">
+        home&nbsp;|&nbsp;search&nbsp;|&nbsp;global&nbsp;|&nbsp;social net&nbsp;|&nbsp;invite&nbsp;|&nbsp;faq&nbsp;|&nbsp;logout
+      </td>
+    </tr>
+    <tr class="user-bar">
+      <td colspan="2">
+        Scott Pearson's Profile (This is you)
+      </td>
+    </tr>
+    <tr valign="top">
+      <td class="sidebar">
+        <table border="0" width="100%" cellpadding="3" cellspacing="0">
+          <tr>
+            <td class="search-header">Quick Search</td>
+          </tr>
+          <tr>
+            <td style="padding:5px;">
+              <input type="text" class="search-input">
+              <button class="search-btn">search</button>
+            </td>
+          </tr>
+        </table>
+        <table border="0" width="100%" cellpadding="2" cellspacing="0" style="margin-top:10px;">
+          <tr><td class="menu-link"><a href="#">My Profile</a></td></tr>
+          <tr><td class="menu-link"><a href="#">My Friends</a></td></tr>
+          <tr><td class="menu-link"><a href="#">My Messages</a></td></tr>
+          <tr><td class="menu-link"><a href="#">My Pokes</a></td></tr>
+          <tr><td class="menu-link"><a href="#">My Account</a></td></tr>
+          <tr><td class="menu-link"><a href="#">My Privacy</a></td></tr>
+        </table>
+      </td>      
+      <td class="content-area">
+        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+          <tr valign="top">          
+            <td width="180" style="padding-right:10px;">             
+              <table class="info-box" cellpadding="3" cellspacing="0">
+                <tr class="box-header">
+                  <td class="box-title">Picture</td>
+                  <td class="box-edit"><a href="#">[edit]</a></td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center" style="padding:10px;">
+                    <img src="mclovin.jpg" alt="Profile Picture" style="border:1px solid #999; width: 160px; height: 210px; object-fit: cover;">
+                  </td>
+                </tr>
+              </table>             
+              <table class="info-box" cellpadding="3" cellspacing="0">
+                <tr class="box-header">
+                  <td class="box-title">Buddies</td>
+                </tr>
+                <tr>
+                  <td class="box-content">
+                    <a href="#">View My Friends</a><br>
+                    <a href="#">Edit My Profile</a><br>
+                    <a href="#">My Account Preferences</a><br>
+                    <a href="#">My Privacy Preferences</a>
+                  </td>
+                </tr>
+              </table>              
+              <table class="info-box" cellpadding="3" cellspacing="0">
+                <tr class="box-header">
+                  <td class="box-title">Connection</td>
+                </tr>
+                <tr>
+                  <td class="box-content">This is you.</td>
+                </tr>
+              </table>              
+              <table class="info-box" cellpadding="3" cellspacing="0">
+                <tr class="box-header">
+                  <td class="box-title">Access</td>
+                </tr>
+                <tr>
+                  <td class="box-content">
+                    Scott is currently logged in from a non-residential location.
+                  </td>
+                </tr>
+              </table>             
+              <table class="info-box" cellpadding="3" cellspacing="0">
+                <tr class="box-header">
+                  <td class="box-title">Other Schools</td>
+                  <td class="box-edit"><a href="#">[edit]</a></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="box-content">
+                    <i>Scranton</i>
+                  </td>
+                </tr>
+              </table>
+            </td>            
+            <td valign="top" style="padding-left:10px;">
+              <table class="info-box" cellpadding="3" cellspacing="0">
+                <tr class="box-header">
+                  <td class="box-title">Information</td>
+                  <td class="box-edit"><a href="#">[edit]</a></td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="padding:10px;">
+                    <table border="0" cellpadding="3" width="100%" cellspacing="0">
+                      <tr><td class="data-label" width="120">Account Info:</td><td class="data-value">Scott Pearson, BS</td></tr>
+                      <tr><td class="data-label">Member Since:</td><td class="data-value">January 12, 2005</td></tr>
+                      <tr><td class="data-label">Last Update:</td><td class="data-value">February 3, 2005</td></tr>
+                      <tr><td colspan="2"><hr class="divider"></td></tr>
+                      <tr><td class="data-label">Email:</td><td class="data-value">pearsons@scranton.edu</td></tr>
+                      <tr><td class="data-label">Status:</td><td class="data-value">Alumnus/Alumna</td></tr>
+                      <tr><td class="data-label">Year:</td><td class="data-value">2004</td></tr>
+                      <tr><td class="data-label">Concentration:</td><td class="data-value">Computing Sciences<br>Mathematics<br>Entrepreneurship</td></tr>
+                      <tr><td class="data-label">High School:</td><td class="data-value">Dumore HS '00</td></tr>
+                      <tr><td class="data-label">Screenname:</td><td class="data-value">ScottPP7</td></tr>
+                      <tr><td class="data-label">Looking For:</td><td class="data-value">Friendship<br>Random play<br>Whatever I can get</td></tr>
+                      <tr><td class="data-label">Interested In:</td><td class="data-value">Women</td></tr>
+                      <tr><td class="data-label">Relationship Status:</td><td class="data-value">Single</td></tr>
+                      <tr><td class="data-label">Political Views:</td><td class="data-value">Liberal</td></tr>
+                      <tr><td class="data-label">Interests:</td><td class="data-value">Skiing, Snowboarding, Drumming, Drinking, Football, Basketball, Tennis, Saving yourself from a cave</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
