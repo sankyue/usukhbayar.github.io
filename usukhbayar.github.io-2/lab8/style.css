@@ -1,0 +1,91 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    width: 500px;
+}
+
+.game-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.right-side {
+    width: 200px;
+}
+
+#questionDisplay {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+#wordDisplay {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#message {
+    font-weight: bold;
+    height: 20px;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.key-btn {
+    width: 35px;
+    height: 35px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.key-btn:hover {
+    background-color: #bdc3c7;
+}
+
+.key-btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    color: #7f8c8d;
+}
+
+#resetBtn {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#resetBtn:hover {
+    background-color: #2ecc71;
+}
